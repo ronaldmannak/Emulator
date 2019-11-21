@@ -12,6 +12,11 @@
 		C759C5B12386532F00501D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C759C5B02386532F00501D76 /* Assets.xcassets */; };
 		C759C5B42386532F00501D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C759C5B22386532F00501D76 /* Main.storyboard */; };
 		C759C5C02386533000501D76 /* EmulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C759C5BF2386533000501D76 /* EmulatorTests.swift */; };
+		C759C5CC2386536800501D76 /* Z80A.swift in Sources */ = {isa = PBXBuildFile; fileRef = C759C5CB2386536800501D76 /* Z80A.swift */; };
+		C759C5CF23866C5C00501D76 /* UInt8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C759C5CE23866C5C00501D76 /* UInt8.swift */; };
+		C759C5D223866C6800501D76 /* UInt16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C759C5D123866C6800501D76 /* UInt16.swift */; };
+		C759C5D423866EB100501D76 /* Z80+InstructionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C759C5D323866EB100501D76 /* Z80+InstructionSet.swift */; };
+		C759C5D62386703200501D76 /* UnsignedInteger+BitOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C759C5D52386703200501D76 /* UnsignedInteger+BitOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,11 @@
 		C759C5BB2386533000501D76 /* EmulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C759C5BF2386533000501D76 /* EmulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatorTests.swift; sourceTree = "<group>"; };
 		C759C5C12386533000501D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C759C5CB2386536800501D76 /* Z80A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z80A.swift; sourceTree = "<group>"; };
+		C759C5CE23866C5C00501D76 /* UInt8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt8.swift; sourceTree = "<group>"; };
+		C759C5D123866C6800501D76 /* UInt16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt16.swift; sourceTree = "<group>"; };
+		C759C5D323866EB100501D76 /* Z80+InstructionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Z80+InstructionSet.swift"; sourceTree = "<group>"; };
+		C759C5D52386703200501D76 /* UnsignedInteger+BitOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnsignedInteger+BitOperations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,8 @@
 		C759C5AB2386532D00501D76 /* Emulator */ = {
 			isa = PBXGroup;
 			children = (
+				C759C5CD23866C5100501D76 /* Extensions */,
+				C759C5CA2386534500501D76 /* Hardware */,
 				C759C5AC2386532D00501D76 /* AppDelegate.swift */,
 				C759C5AE2386532D00501D76 /* ViewController.swift */,
 				C759C5B02386532F00501D76 /* Assets.xcassets */,
@@ -93,6 +105,25 @@
 				C759C5C12386533000501D76 /* Info.plist */,
 			);
 			path = EmulatorTests;
+			sourceTree = "<group>";
+		};
+		C759C5CA2386534500501D76 /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				C759C5CB2386536800501D76 /* Z80A.swift */,
+				C759C5D323866EB100501D76 /* Z80+InstructionSet.swift */,
+			);
+			path = Hardware;
+			sourceTree = "<group>";
+		};
+		C759C5CD23866C5100501D76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C759C5CE23866C5C00501D76 /* UInt8.swift */,
+				C759C5D123866C6800501D76 /* UInt16.swift */,
+				C759C5D52386703200501D76 /* UnsignedInteger+BitOperations.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +226,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C759C5D62386703200501D76 /* UnsignedInteger+BitOperations.swift in Sources */,
+				C759C5CC2386536800501D76 /* Z80A.swift in Sources */,
 				C759C5AF2386532D00501D76 /* ViewController.swift in Sources */,
+				C759C5D423866EB100501D76 /* Z80+InstructionSet.swift in Sources */,
+				C759C5CF23866C5C00501D76 /* UInt8.swift in Sources */,
 				C759C5AD2386532D00501D76 /* AppDelegate.swift in Sources */,
+				C759C5D223866C6800501D76 /* UInt16.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
